@@ -34,6 +34,7 @@ export interface Vote {
   proposal: string;
   type: string;
   choice: number | number[] | string;
+  metadata: string;
   privacy?: string;
 }
 
@@ -122,7 +123,8 @@ export const voteTypes = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'string' },
-    { name: 'choice', type: 'uint32' }
+    { name: 'choice', type: 'uint32' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
@@ -132,7 +134,8 @@ export const voteArrayTypes = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'string' },
-    { name: 'choice', type: 'uint32[]' }
+    { name: 'choice', type: 'uint32[]' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
@@ -142,7 +145,8 @@ export const voteStringTypes = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'string' },
-    { name: 'choice', type: 'string' }
+    { name: 'choice', type: 'string' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
@@ -152,7 +156,8 @@ export const vote2Types = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'bytes32' },
-    { name: 'choice', type: 'uint32' }
+    { name: 'choice', type: 'uint32' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
@@ -162,7 +167,8 @@ export const voteArray2Types = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'bytes32' },
-    { name: 'choice', type: 'uint32[]' }
+    { name: 'choice', type: 'uint32[]' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
@@ -172,7 +178,8 @@ export const voteString2Types = {
     { name: 'space', type: 'string' },
     { name: 'timestamp', type: 'uint64' },
     { name: 'proposal', type: 'bytes32' },
-    { name: 'choice', type: 'string' }
+    { name: 'choice', type: 'string' },
+    { name: 'metadata', type: 'string' }
   ]
 };
 
